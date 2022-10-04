@@ -17,6 +17,14 @@ public class NullContainer2 extends JFrame {
 		la.setLocation(130, 50); // 라벨 위치 지정
 		la.setSize(200, 20); // 라벨 크기 지정
 		c.add(la); // 라벨 컨텐트 팬에 부착
+		
+		/*JButton[] btn = new JButton[9]; 배열 이용하여 재사용 할 수있게 가능
+		for (int i = 1; i <= 9; i++) {
+			btn[i] = new JButton(Integer.toString(i));
+			btn[i].setLocation(i*15,i*15);
+			btn[i].setSize(50, 20);
+			add.(btn[i]);
+		}*/
 
 		for (int i = 1; i <= 9; i++) {
 			JButton b = new JButton(Integer.toString(i)); // 버튼 생성 -> string 으로 변환
